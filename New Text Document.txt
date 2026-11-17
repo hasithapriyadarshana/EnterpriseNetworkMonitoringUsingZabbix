@@ -1,4 +1,3 @@
-Component	IP address
 Windows Host-only	192.168.56.1
 Zabbix Appliance	192.168.56.102
 Zabbix Web UI	http://127.0.0.1:8081/
