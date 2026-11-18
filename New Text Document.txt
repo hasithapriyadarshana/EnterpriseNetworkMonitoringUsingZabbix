@@ -8,3 +8,11 @@ Windows Host-only network 1	192.168.56.1
 Windows Host-only network 2	192.168.6.4
 Zabbix Appliance	192.168.56.102
 GNS3 VM	192.168.6.3
+
+
+I can identify these addresses from your screenshots:
+Device	Interface	IP address
+Zabbix VM	eth0 (NAT)	10.0.2.15
+Zabbix VM	eth1 (Host-Only)	192.168.56.102
+GNS3 VM	eth0 (Host-Only)	192.168.56.103
+GNS3 VM	eth1	10.0.3.15
