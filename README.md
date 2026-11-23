@@ -40,23 +40,8 @@ The lab was expanded from an initial Cloud1–R1 connection into a multi-router 
 
 ### Logical topology overview
 
-```text
-                         Windows 11 Host
-                               |
-                            Cloud1
-                               |
-                         R1 (Main Router)
-                         /             \
-                    R1 -- R2         R1 -- R3
-                     |                   |
-                LAN / Switches       LAN / Switches
-                  |      |             |      |
-                 PC1    PC2           PC3    PC4
+<img width="915" height="616" alt="tp" src="https://github.com/user-attachments/assets/e1595b51-d371-4ce5-b1bf-f6696c365f7a" />
 
-                   Zabbix Appliance
-                 VirtualBox Host-only
-                    192.168.56.102
-```
 
 > This is a logical overview. The exact switch-to-router and PC-to-switch connections depend on the saved GNS3 project.
 
