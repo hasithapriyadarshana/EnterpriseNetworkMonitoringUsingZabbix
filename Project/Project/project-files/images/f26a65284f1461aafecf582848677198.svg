@@ -1,0 +1,33 @@
+<svg width="309" height="536"><text font-family="TypeWriter" font-size="10.0" font-weight="bold" fill="#000000" fill-opacity="1.0">1. Management Network
+Windows Host-only Adapter: 192.168.56.1/24
+Zabbix Appliance (eth1): 192.168.56.102/24
+Zabbix Appliance (eth0 – NAT): 10.0.2.15
+R1 Management: 192.168.56.10/24
+
+2. Router-to-Router Links
+R1 G2/0: 10.12.0.1/30
+R2 G1/0: 10.12.0.2/30
+R1 G3/0: 10.13.0.1/30
+R3 G1/0: 10.13.0.2/30
+
+3. LAN Networks
+R2 LAN Gateway: 192.168.20.1/24
+PC1: DHCP (192.168.20.0/24 network)
+PC2: DHCP (192.168.20.0/24 network)
+R3 LAN Gateway: 192.168.30.1/24
+PC3: DHCP (192.168.30.0/24 network)
+PC4: DHCP (192.168.30.0/24 network)
+
+4. Zabbix Monitoring Addresses
+Cisco Router R1: 192.168.56.10:161
+Cisco Router R2: 10.12.0.2:161
+Cisco Router R3: 10.13.0.2:161
+Zabbix Server: 127.0.0.1:10050
+
+5. Network Information
+SNMP Version: SNMPv2c
+SNMP Community: ZabbixRO
+SNMP Port: UDP 161
+Zabbix Agent Port: TCP 10050
+R2 LAN Network: 192.168.20.0/24
+R3 LAN Network: 192.168.30.0/24 </text></svg>
