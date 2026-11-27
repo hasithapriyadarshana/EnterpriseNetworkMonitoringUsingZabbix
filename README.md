@@ -1,3 +1,4 @@
+
 # Zabbix Network Monitoring Project
 
 A network monitoring lab built with **Zabbix 8.0.0**, **GNS3**, **Cisco IOS routers**, and **VirtualBox**. The project demonstrates how to monitor network-device availability, interfaces, traffic, CPU, memory, and network errors using SNMP and ICMP.
@@ -41,7 +42,6 @@ The lab was expanded from an initial Cloud1–R1 connection into a multi-router 
 ### Logical topology overview
 
 <img width="915" height="616" alt="tp" src="https://github.com/user-attachments/assets/e1595b51-d371-4ce5-b1bf-f6696c365f7a" />
-
 
 > This is a logical overview. The exact switch-to-router and PC-to-switch connections depend on the saved GNS3 project.
 
@@ -202,20 +202,24 @@ dnf makecache --refresh
 dnf install net-snmp-utils -y
 ```
 
-## 10. Project Status and Future Improvements
+## 10. Completed Outcomes and Improvements
 
-The lab has progressed from basic Zabbix installation and single-router connectivity to a multi-router SNMP monitoring environment.
+The Zabbix network monitoring lab was expanded into a multi-router monitoring environment. The following configurations, tests, and troubleshooting activities were completed:
 
-Possible next improvements:
+- Established connectivity between the Zabbix monitoring server and the GNS3 network topology using VirtualBox Host-only networking.
+- Configured static routing to enable communication between the monitoring server and remote router networks.
+- Configured SNMPv2c on Cisco routers and verified SNMP responses using packet counters and Response PDUs.
+- Added Cisco routers to Zabbix using the **Cisco IOS by SNMP** template.
+- Configured SNMP community macros and monitoring interfaces for network devices.
+- Tested ICMP availability and investigated device reachability issues.
+- Examined router interface discovery, operational status, and traffic monitoring.
+- Generated CPU load on R2 to investigate CPU utilisation monitoring.
+- Identified and investigated duplicate ICMP monitoring-item conflicts between linked templates.
+- Used the Zabbix Latest Data interface to investigate monitoring values and identify items without collected data.
+- Performed network troubleshooting using Cisco IOS and Rocky Linux diagnostic commands.
+- Investigated connectivity, DNS, routing, and SNMP-related issues during implementation.
 
-- Confirm that all router hosts remain available and are collecting SNMP data.
-- Complete SNMP walk testing from the Zabbix server.
-- Add and monitor supported switches using suitable SNMP templates.
-- Verify interface discovery and traffic graphs for each router.
-- Configure triggers and alert notifications for device-down events, high CPU, high memory, and interface problems.
-- Create a dashboard showing the whole lab's availability and performance.
-- Document the final GNS3 topology and save configuration backups.
-- Improve SNMP security by moving to read-only community access or SNMPv3.
+**Overall outcome:** Developed a practical multi-router network monitoring environment using Zabbix, GNS3, Cisco IOS, and VirtualBox, gaining hands-on experience in SNMP-based monitoring, network performance analysis, device availability monitoring, and network troubleshooting.
 
 ## 11. Learning Outcomes
 
@@ -231,6 +235,8 @@ Through this project, the following practical skills were developed:
 - Registering network devices in Zabbix and applying monitoring templates.
 - Investigating monitoring-item conflicts and missing data.
 - Understanding network availability, performance metrics, and troubleshooting workflows.
+- Analysing SNMP communication and network monitoring behaviour.
+- Understanding the importance of monitoring infrastructure availability and performance.
 
 ---
 
